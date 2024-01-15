@@ -90,7 +90,7 @@ function resetTest() {
     inpField.value = "";
     timeTag.innerText = timeLeft;
     wpmTag.innerText = 0;
-    errorTag.innerText = 03;
+    errorTag.innerText = 0;
     cpmTag.innerText = 0;
 }
 
