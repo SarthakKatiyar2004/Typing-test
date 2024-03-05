@@ -38,6 +38,7 @@ body {
   border-radius: 20px;
   border: 1px solid rgba(255,255,255,0.19);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.30);
+  z-index: -1;
 }
 
 .wrapper .input-field {
@@ -178,4 +179,64 @@ li:not(:first-child) span {
 
 .timeLeft span {
   color: #cb3439;
+}
+
+.screen {
+  margin-top: 17px;
+  display: absolute;
+  padding: 12px 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #bfbfbf;
+  line-break: auto;
+}
+#resultScreen{
+  display: none;
+}
+
+.result-box {
+  display: block;
+  position: absolute;
+  width: 770px;
+  padding: 35px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #808080;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.result-box h2 {
+  margin-bottom: 20px;
+}
+
+.result-box button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: deepskyblue;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.result-box .result-details {
+  margin-top: 17px;
+  display: flex;
+  padding: 12px 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #bfbfbf;
+  line-break: auto;
+}
+
+.result-box button:hover {
+  background-color: #00aaff;
 }
